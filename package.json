@@ -1,0 +1,44 @@
+{
+  "name": "tslint-import-rules",
+  "version": "1.0.0",
+  "description": "Set of tslint rules for imports",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "test": "npm run build && mocha -r ts-node/register tests/**/*.spec.ts --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WojcikMM/tslint-import-rules.git"
+  },
+  "keywords": [
+    "tslint",
+    "import",
+    "rules",
+    "custom",
+    "formatting"
+  ],
+  "files": [
+    "dist/rules",
+    "LICENCE",
+    "README.md"
+  ],
+  "author": "WojcikMM",
+  "license": "SEE LICENCE IN LICENCE",
+  "bugs": {
+    "url": "https://github.com/WojcikMM/tslint-import-rules/issues"
+  },
+  "homepage": "https://github.com/WojcikMM/tslint-import-rules#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^8.0.0",
+    "@types/node": "^14.0.24",
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.10.2",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.7",
+    "typings": "^2.1.1"
+  }
+}
