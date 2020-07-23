@@ -52,10 +52,10 @@ class NoManyInlineImportsWalker extends RuleWalker {
         const allowMultipleImportsInSingleLineConst = 'allow-multiple-imports-in-single-line';
         const allowSingleImportsInMultiLineConst = 'allow-single-imports-in-multiline';
         const options: string[] = this.getOptions();
-        const checkMultiImportsInSignleLine = options.indexOf(allowMultipleImportsInSingleLineConst) === -1;
+        const checkMultiImportsInSingleLine = options.indexOf(allowMultipleImportsInSingleLineConst) === -1;
         const checkSingleImportsInMultiLine = options.indexOf(allowSingleImportsInMultiLineConst) === -1;
 
-        if (checkMultiImportsInSignleLine) {
+        if (checkMultiImportsInSingleLine) {
             const pattern = /import\s*{\s*(((\w+[ \t]*,\s*)*(\w+[ \t]*,[ \t]*){2,}(\n?[ \t]*\w+,?[ \t]*)*)|((\w+[ \t]*,[ \t]*\s*)+\w+,[ \t]*([ \t]*\w+)))[ \t]*\s*}\s*from\s*(.*)/g;
             const errorMessage = 'too many imports in one line';
 

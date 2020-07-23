@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist && tsc",
-    "test": "npm run build && mocha -r ts-node/register tests/**/*.spec.ts --recursive"
+    "test": "npm run build && mocha -r ts-node/register tests/**/*.spec.ts --recursive",
+    "test:watch": "npm run test -- --watch",
+    "build:watch": "npm run build -- --watch"
   },
   "repository": {
     "url": "git://github.com/WojcikMM/tslint-import-rules.git"
