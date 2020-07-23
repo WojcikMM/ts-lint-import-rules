@@ -1,5 +1,5 @@
 import { Linter, IOptions } from 'tslint/lib'
-export const checkRule = (source: string, ruleName: string, ruleArguments: any) => {
+export const checkRule = (source: string, ruleName: string, ruleArguments?: any) => {
 
     const rulesMap = new Map<string, Partial<IOptions>>([[ruleName, { ruleName, ruleArguments, disabledIntervals: [] }]]);
 
