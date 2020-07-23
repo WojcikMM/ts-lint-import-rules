@@ -7,7 +7,7 @@ export const checkRule = (source: string, ruleName: string, ruleArguments: any) 
         fix: false,
         formatter: 'json',
         formattersDirectory: undefined,
-        rulesDirectory: './rules'
+        rulesDirectory: './lib'
     }, undefined)
 
     linter.lint('file.ts', source, {

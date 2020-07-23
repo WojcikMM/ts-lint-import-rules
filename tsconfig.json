@@ -10,7 +10,7 @@
         "module": "commonjs",
         "noImplicitAny": false,
         "noLib": false,
-        "outDir": "./rules",
+        "outDir": "./lib",
         "removeComments": true,
         "strict": true,
         "target": "es5",

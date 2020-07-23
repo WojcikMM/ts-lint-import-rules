@@ -1,5 +1,5 @@
 {
-  "name": "tslint-import-rules",
+  "name": "@wojcikmm/tslint-import-rules",
   "version": "1.0.0",
   "description": "Set of tslint rules for imports",
   "main": "index.js",
@@ -8,8 +8,7 @@
     "test": "npm run build && mocha -r ts-node/register tests/**/*.spec.ts --recursive"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/WojcikMM/tslint-import-rules.git"
+    "url": "git://github.com/WojcikMM/tslint-import-rules.git"
   },
   "keywords": [
     "tslint",
@@ -19,7 +18,7 @@
     "formatting"
   ],
   "files": [
-    "dist/rules",
+    "lib",
     "LICENCE",
     "README.md"
   ],
